@@ -1,4 +1,4 @@
-# I Cant Vote
+# I Can't Vote
 
 Thesis:
 
