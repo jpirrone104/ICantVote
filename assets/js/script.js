@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
+
+var elem = document.querySelector('.sidenav');
+var instance = new M.Sidenav(elem);
