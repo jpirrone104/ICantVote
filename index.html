@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+  
   <nav style="background-color: #F13C20">
     <div class="nav-wrapper">
       <a href="#!"> <img src="./assets/images/deez.jpeg" width="65" height="65" class="brand-logo"></a>
@@ -29,43 +29,55 @@
 
   <ul class="sidenav" id="mobile-demo">
     <li><a href="#page1">Find my Rep</a></li>
-    <li><a href="https://www.youtube.com/watch?v=9NkkZJHova4">Look at this Graph</a></li>
+    <li><a href="#page2">Look at this Graph</a></li>
     <li><a href="collapsible.html">Javascript</a></li>
     <li><a href="mobile.html">Mobile</a></li>
   </ul>
 
+  <div class="container">
 
-  <div id="page1" style="background-color:#EFE2BA;border-radius:25px; border:2px solid #D2D2D2; padding: 0px 20px 20px 20px; width:400px; font-family: Helvetica,Arial,sans-serif;">
-    <div>
-      <h4>Who Represents Me?</h4>
-      <div style="width:100%;display:inline-block;">
-        <div style="display:inline-block;width:65px;">Address</div>
-        <input type="text" name="address" id="bp-eol-address" style="width:225px;height:1.5em;" />
-        <div style="display:inline-block;width:65px;">Email</div>
-        <input type="text" name="email" id="bp-eol-email" style="width:225px;height:1.5em;" />
-      </div>
-      <div style="width:15%;display:inline-block;vertical-align:top;margin-bottom:10px;">
-        <button onclick="document.location='https://ballotpedia.org/Who_represents_me%3F#address='+document.getElementById('bp-eol-address').value+'&email='+document.getElementById('bp-eol-email').value;"
-          style="background:#4056A1;color:#fff!important;border-radius:4px;box-shadow:-1px 1px 2px rgba(32, 32, 32, 0.15);cursor:pointer;letter-spacing:0.04em;margin:2px 0 8px 4px;padding:8px 22px;position:relative;text-decoration:none;transition:background-color 250ms ease-in-out, opacity 250ms ease-in-out;white-space:nowrap;">Go</button>
-      </div>
-      <div>
-        <div style="display:inline-block;width:50%;vertical-align:top;padding-top:18px;">Powered by<img
-          src="https://cdn.ballotpedia.org/images/1/15/Ballotpedia-Logo-UPDATED.png" alt="Ballotpedia logo"
-          style="width:65%;"></div>
-        <p style="font-style: italic; font-size: 10px">Disclaimer: Any use of this data on another website does not
-          constitute or imply the endorsement or recommendation from Ballotpedia.</p>
+    <div class="container col s12 m6 l3"  id="page1">
+    <div class="row"><br/></div>
+      <div class="col s12 m6 l3" style="background-color:#EFE2BA;border-radius:25px; border:2px solid #D2D2D2; padding: 0px 20px 20px 20px; font-family: Helvetica,Arial,sans-serif;">
+        <div>
+          <h4>Who Represents Me?</h4>
+          <div>
+            <div class="row">
+              <div class="input-field col s10">
+                <input type="text" name="address" id="bp-eol-address"  />
+                <label for="bp-eol-address">Address</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s10">
+                <input type="text" name="email" id="bp-eol-email"  />
+                <label for="bp-eol-email">Email</label>
+              </div>
+            </div>
+            <button onclick="document.location='https://ballotpedia.org/Who_represents_me%3F#address='+document.getElementById('bp-eol-address').value+'&email='+document.getElementById('bp-eol-email').value;"
+              style="background:#4056A1;color:#fff!important;border-radius:4px;box-shadow:-1px 1px 2px rgba(32, 32, 32, 0.15);cursor:pointer;letter-spacing:0.04em;margin:2px 0 8px 4px;padding:8px 22px;position:relative;text-decoration:none;transition:background-color 250ms ease-in-out, opacity 250ms ease-in-out;white-space:nowrap;">Go</button>
+          </div>
+          <div>
+            <div style="display:inline-block;width:50%;vertical-align:top;padding-top:18px;">Powered by<img
+              src="https://cdn.ballotpedia.org/images/1/15/Ballotpedia-Logo-UPDATED.png" alt="Ballotpedia logo"
+              style="width:65%;"></div>
+            <p style="font-style: italic; font-size: 10px">Disclaimer: Any use of this data on another website does not
+              constitute or imply the endorsement or recommendation from Ballotpedia.</p>
+          </div>
+        </div>
       </div>
     </div>
+  <div class="container">
+    <div class="row">
+
+    </div>
   </div>
-
-  <div>
-
-  </div>
-
-  <div id="page2">
+  <div class="conatiner col s12 m6 l3" id="page2">
+    <div class="conatiner col s12 m6 l3">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9NkkZJHova4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
   </div>
-
+</div>
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
